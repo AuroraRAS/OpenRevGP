@@ -1,0 +1,8 @@
+ABORT "200:UNKNOWN COMMAND\r\n"
+ABORT "201:INVALID COMMAND USAGE\r\n"
+#ECHO ON
+SAY "Attempt to initialize the device...\n"
+'' "PCRPANDA?\r\n\c"
+"OK WITH TEXT\r\n" \c
+"COM.\r\n" \c
+SAY "Device initialized.\n"

@@ -1,0 +1,7 @@
+ABORT "200:UNKNOWN COMMAND\r\n"
+ABORT "201:INVALID COMMAND USAGE\r\n"
+#ECHO ON
+SAY "Request to get slot dump...\n"
+'' "DOWNLOAD\r\n\c"
+"WAITING FOR XMODEM\r\n" \c
+SAY "Receiving by XMODEM.\n"

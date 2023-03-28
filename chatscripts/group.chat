@@ -1,0 +1,7 @@
+ABORT "200:UNKNOWN COMMAND\r\n"
+ABORT "201:INVALID COMMAND USAGE\r\n"
+#ECHO ON
+SAY "Select group: $group\n"
+'' "groups=$group\r\n\c"
+"OK\r\n" \c
+SAY "Group $group has been selected\n"

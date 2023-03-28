@@ -1,0 +1,7 @@
+ABORT "200:UNKNOWN COMMAND\r\n"
+ABORT "201:INVALID COMMAND USAGE\r\n"
+#ECHO ON
+SAY "Clear detection data in all slots...\n"
+'' "PCRDETECTION=0\r\n\c"
+"OK\r\n" \c
+SAY "Detection data in all slots has been cleared\n"

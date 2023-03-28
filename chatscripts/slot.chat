@@ -1,0 +1,7 @@
+ABORT "200:UNKNOWN COMMAND\r\n"
+ABORT "201:INVALID COMMAND USAGE\r\n"
+#ECHO ON
+SAY "Select slot: $slot\n"
+'' "SETTING=$slot\r\n\c"
+"OK\r\n" \c
+SAY "Slot $slot has been selected\n"
