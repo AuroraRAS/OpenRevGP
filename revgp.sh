@@ -108,6 +108,6 @@ fi
 
 if [ "$put" != "" ]; then
     chat -t 10 -f chatscripts/put.chat < $serialport > $serialport && sleep 0.1 && \
-        rx -X $put < $serialport > $serialport
+        sx -X -b $put < $serialport > $serialport
 fi
 

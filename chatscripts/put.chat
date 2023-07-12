@@ -4,4 +4,4 @@ ABORT "201:INVALID COMMAND USAGE\r\n"
 SAY "put data to activated slot...\n"
 '' "PCRUPLOAD\r\n\c"
 "WAITING FOR XMODEM\r\n" \c
-SAY "Receiving by XMODEM.\n"
+SAY "Sending via XMODEM.\n"
