@@ -11,6 +11,7 @@ detection_clean=""
 detection_clean_all=""
 get=""
 put=""
+uid=""
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]
@@ -65,6 +66,11 @@ do
         shift
         shift
         ;;
+        -su|--set-uid)
+        uid="$2"
+        shift
+        shift
+        ;;
         *)
         echo "Unknown option: $1"
         exit 1
@@ -109,5 +115,9 @@ fi
 if [ "$put" != "" ]; then
     chat -t 10 -f chatscripts/put.chat < $serialport > $serialport && sleep 0.1 && \
         sx -X -b $put < $serialport > $serialport
+fi
+
+if [ "$uid" != "" ]; then
+    uid=$uid chat -E -t 10 -f chatscripts/uid.chat < $serialport > $serialport && sleep 0.1 || exit
 fi
 

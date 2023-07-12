@@ -1,0 +1,7 @@
+ABORT "200:UNKNOWN COMMAND\r\n"
+ABORT "201:INVALID COMMAND USAGE\r\n"
+#ECHO ON
+SAY "Set UID: $uid\n"
+'' "UID=$uid\r\n\c"
+"OK\r\n" \c
+SAY "UID $uid has been set\n"
